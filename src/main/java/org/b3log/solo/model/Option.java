@@ -602,6 +602,7 @@ public final class Option {
                 html += "标题：{title}<br>\n";
                 html += "作者：<a href=\"{blog}\" target=\"_blank\">{author}</a><br>\n";
                 html += "地址：<a href=\"{url}\" target=\"_blank\">{url}</a><br>\n\n";
+                html += "日期：{date}<br>\n";
                 html += "<!-- 签名档内可使用 HTML、JavaScript -->\n<br>";
                 sign.put(Sign.SIGN_HTML, html);
             }
