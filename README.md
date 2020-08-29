@@ -10,18 +10,20 @@
 
 ### 最新
 
-* [浅谈网络带宽](http://103.202.147.35/bolo_war/articles/2020/08/22/1598104178377.html)
-* [好用的工具网站收录](http://103.202.147.35/bolo_war/toolSites)
-* [Mac使用学习](http://103.202.147.35/bolo_war/1593959772687.html)
-* [MySQL-基础知识](http://103.202.147.35/bolo_war/1593949777404.html)
-* [关于TCP三次握手及四次挥手的简单实现过程](http://103.202.147.35/bolo_war/1593945016007.html)
-* [从一次完整的HTTP事务来看网络分层关系](http://103.202.147.35/bolo_war/1593944291815.html)
-* [MySQL-Explain执行计划及调优策略](http://103.202.147.35/bolo_war/593928128028.html)
-* [MySQL-RDBMS系统逻辑架构](http://103.202.147.35/bolo_war/1593860013350.html)
-* [Markdown基础语法学习](http://103.202.147.35/bolo_war/1593851867749.html)
-* [MySQL-理解B+tree的索引机制](http://103.202.147.35/bolo_war/1593851663949.html)
-* [互联网协议分层关系](http://103.202.147.35/bolo_war/1575995062860.html)
-* [博客数据丢失！](http://103.202.147.35/bolo_war/hello-solo)
+* [年中工作小结](http://101.224.11.161/bolo_war/articles/2020/08/29/1598697067344.html)
+* [浅谈网络带宽](http://101.224.11.161/bolo_war/articles/2020/08/22/1598104178377.html)
+* [好用的工具网站收录](http://101.224.11.161/bolo_war/toolSites)
+* [Mac Catalina版本升级问题](http://101.224.11.161/bolo_war/1593959772687.html)
+* [MySQL-基础知识](http://101.224.11.161/bolo_war/1593949777404.html)
+* [关于TCP三次握手及四次挥手的简单实现过程](http://101.224.11.161/bolo_war/1593945016007.html)
+* [从一次完整的HTTP事务来看网络分层关系](http://101.224.11.161/bolo_war/1593944291815.html)
+* [MySQL-Explain执行计划及调优策略](http://101.224.11.161/bolo_war/593928128028.html)
+* [重识UML](http://101.224.11.161/bolo_war/1593860043217.html)
+* [MySQL-RDBMS系统逻辑架构](http://101.224.11.161/bolo_war/1593860013350.html)
+* [Markdown基础语法学习](http://101.224.11.161/bolo_war/1593851867749.html)
+* [MySQL-理解B+tree的索引机制](http://101.224.11.161/bolo_war/1593851663949.html)
+* [互联网协议分层关系](http://101.224.11.161/bolo_war/1575995062860.html)
+* [博客数据丢失！](http://101.224.11.161/bolo_war/hello-solo)
 
 
 
