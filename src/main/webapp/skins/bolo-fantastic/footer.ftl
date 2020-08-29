@@ -22,13 +22,8 @@
         <div class="level">
             <div class="level-start has-text-centered-mobile">
                 <p class="is-size-6">
-                    &copy; ${.now?string('yyyy')} ${blogTitle!}&nbsp;
+                    &copy;&nbsp;2017-${.now?string('yyyy')} ${blogTitle!}&nbsp;
                     Powered by <a href="https://github.com/AdlerED/bolo-solo" target="_blank">Bolo</a>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;Theme <a href="https://github.com/csfwff/bolo-fantastic">Fantastic</a> by
-                    <a href="https://github.com/csfwff" target="_blank">唐墨夏</a>
-                    <br/>
-
                 </p>
             </div>
             <div class="level-end">
@@ -48,10 +43,25 @@
         </div>
     </div>
 </footer>
+    <script>
+        var rightClickCount = 0;
+        document.oncontextmenu = function(){
+            event.returnValue = false;
+        }
+        // 或者直接返回整个事件
+        document.oncontextmenu = function(){
+            rightClickCount++;
+            if (rightClickCount >= 5 {
+                alert("右键已屏蔽！")
+            }
+            return false;
+        }
+    </script>
 <script type="text/javascript" src="${staticServePath}/js/lib/jquery/jquery.min.js" charset="utf-8"></script>
 <script src="${staticServePath}/js/lib/compress/pjax.min.js"></script>
 <script src="${staticServePath}/js/common${miniPostfix}.js?${staticResourceVersion}"></script>
 <script src="${staticServePath}/skins/${skinDirName}/js/common${miniPostfix}.js?${staticResourceVersion}"></script>
+<script src="${staticServePath}/js/lib/layer/layer.js"></script>
 <#include "../../common-template/label.ftl">
 
 ${plugins}

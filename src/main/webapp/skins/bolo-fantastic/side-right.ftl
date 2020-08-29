@@ -18,6 +18,14 @@
 
 -->
 <div class="card widget">
+    <div class="card-content" style="width:100%">
+        <div class="menu">
+            &nbsp;<input type="text" required="required" value="" name="s" id="search" onkeydown="enterSearch(event)">&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="searchsubmit" class="button" value="搜索" onclick="search()">
+        </div>
+    </div>
+</div>
+<div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
             ${mostViewCountArticlesLabel}
@@ -76,3 +84,19 @@
         </div>
     </div>
 </div>
+<script>
+    function enterSearch(event){
+        if(event.keyCode == "13"){
+            search();
+        }
+
+    }
+    function search(){
+        var s = $("#search").val();
+        if (s == ""){
+            alert("请输入关键字！")
+            return;
+        }
+        window.open("https://blog.zhangfeibiao.com/search?keyword=" + s);
+    }
+</script>
