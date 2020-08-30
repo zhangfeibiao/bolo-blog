@@ -91,10 +91,15 @@
         }
 
     }
+
+    var searchEmptyCount = 0
     function search(){
         var s = $("#search").val();
         if (s == ""){
-            alert("请输入关键字！")
+            searchEmptyCount++;
+            if (searchEmptyCount > 3) {
+                alert("请输入关键字！");
+            }
             return;
         }
         window.open("https://blog.zhangfeibiao.com/search?keyword=" + s);

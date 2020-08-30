@@ -51,7 +51,7 @@
         // 或者直接返回整个事件
         document.oncontextmenu = function(){
             rightClickCount++;
-            if (rightClickCount >= 5 {
+            if (rightClickCount >= 5) {
                 alert("右键已屏蔽！")
             }
             return false;
@@ -61,7 +61,6 @@
 <script src="${staticServePath}/js/lib/compress/pjax.min.js"></script>
 <script src="${staticServePath}/js/common${miniPostfix}.js?${staticResourceVersion}"></script>
 <script src="${staticServePath}/skins/${skinDirName}/js/common${miniPostfix}.js?${staticResourceVersion}"></script>
-<script src="${staticServePath}/js/lib/layer/layer.js"></script>
 <#include "../../common-template/label.ftl">
 
 ${plugins}
