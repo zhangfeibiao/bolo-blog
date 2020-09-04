@@ -39,24 +39,18 @@
                 <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
                     <div>${footerContent} <br></div>
                 </div>
+
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                    <a href="https://cdn.zhangfeibiao.com/zhangfeibiao.com.png" style="font-size:14px;"><img style="float: left;" src="https://cdn.zhangfeibiao.com/wp-content/uploads/2018/10/batb.png" />赣ICP备17016845号 </a>
+                    <script type="text/javascript" src="//js.users.51.la/20922489.js"></script>
+                </div>
+
+
+
             </div>
         </div>
     </div>
 </footer>
-    <script>
-        var rightClickCount = 0;
-        document.oncontextmenu = function(){
-            event.returnValue = false;
-        }
-        // 或者直接返回整个事件
-        document.oncontextmenu = function(){
-            rightClickCount++;
-            if (rightClickCount >= 5) {
-                alert("右键已屏蔽！")
-            }
-            return false;
-        }
-    </script>
 <script type="text/javascript" src="${staticServePath}/js/lib/jquery/jquery.min.js" charset="utf-8"></script>
 <script src="${staticServePath}/js/lib/compress/pjax.min.js"></script>
 <script src="${staticServePath}/js/common${miniPostfix}.js?${staticResourceVersion}"></script>

@@ -21,7 +21,7 @@
     <div class="card-content" style="width:100%">
         <div class="menu">
             &nbsp;<input type="text" required="required" value="" name="s" id="search" onkeydown="enterSearch(event)">&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="searchsubmit" class="button" value="搜索" onclick="search()">
+            <input type="submit" id="searchsubmit" class="button" style="font-size:9.5pt"  value="搜索" onclick="search()">
         </div>
     </div>
 </div>

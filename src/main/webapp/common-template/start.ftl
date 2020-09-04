@@ -99,7 +99,7 @@
                                 <span class="input-group-addon" style="padding-right: 12px;">
                                     <i class="fa fa-key"></i>
                                 </span>
-                            <input type="password" id="password" name="password" class="form-control" placeholder="管理员密码"  />
+                            <input type="password" id="password" name="password" class="form-control" placeholder="管理员密码" onkeydown="KeyDown()" />
                         </div>
                     </div>
                     <div class="footer text-center">
@@ -162,6 +162,12 @@
                 }
             }
         }
+        function KeyDown() {
+            if (event.keyCode==13) {
+                document.getElementById("loginBtn").click();
+            }
+        }
+
     </script>
     <footer class="footer">
         <div class="container">
