@@ -156,25 +156,6 @@ box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);">
             </div>
         </div>
     </div>
-    <div class="card widget">
-        <div class="card-content">
-            <div class="menu">
-                <h3 class="menu-label">
-                    ${tagLabel}
-                </h3>
-                <div class="field is-grouped is-grouped-multiline">
-                    <#list mostUsedTags as tag>
-                        <div class="control">
-                            <a class="tags has-addons" href="${servePath}/tags/${tag.tagTitle?url('UTF-8')}">
-                                <span class="tag">${tag.tagTitle}</span>
-                                <span class="tag is-grey">${tag.tagPublishedRefCount!}</span>
-                            </a>
-                        </div>
-                    </#list>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="column-right-shadow is-hidden-widescreen is-6-fullhd">
         <div class="card widget">
             <div class="card-content">
