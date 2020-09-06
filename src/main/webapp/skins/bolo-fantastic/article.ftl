@@ -66,6 +66,14 @@
                                                     <div class="level-item has-text-grey">
                                                         最后修改：${article.articleUpdateDate?string("yyyy年MM月dd日")}
                                                     </div>
+                                                    <div>
+                                                        ${article.articleViewCount} 浏览&nbsp;
+                                                    </div>
+                                                    <#if 0 != article.articleCommentCount  >
+                                                        <div>
+                                                            &nbsp;<a href="#comments" >${article.articleCommentCount} 评论&nbsp;</a>
+                                                        </div>
+                                                    </#if>
                                                     <div class="level-item has-text-grey">
                                                         ${article.articleCategory}
                                                     </div>
