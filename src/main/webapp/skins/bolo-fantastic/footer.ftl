@@ -24,6 +24,10 @@
                 <p class="is-size-6">
                     &copy;&nbsp;2017-${.now?string('yyyy')} ${blogTitle!}&nbsp;
                     Powered by <a href="https://github.com/AdlerED/bolo-solo" target="_blank">Bolo</a>
+                    </br>
+                    &nbsp;&nbsp;&nbsp;Theme <a href="https://github.com/csfwff/bolo-fantastic">Fantastic</a> by
+                    <a href="https://github.com/csfwff" target="_blank">唐墨夏</a>
+                    <br/>
                 </p>
             </div>
             <div class="level-end">
@@ -55,6 +59,27 @@
 <script src="${staticServePath}/js/lib/compress/pjax.min.js"></script>
 <script src="${staticServePath}/js/common${miniPostfix}.js?${staticResourceVersion}"></script>
 <script src="${staticServePath}/skins/${skinDirName}/js/common${miniPostfix}.js?${staticResourceVersion}"></script>
+<script type="text/javascript" >
+    function enterSearch(event){
+        if(event.keyCode == "13"){
+            search();
+        }
+
+    }
+
+    var searchEmptyCount = 0
+    function search(){
+        var s = $("#search-new-s").val();
+        if (s == ""){
+            searchEmptyCount++;
+            if (searchEmptyCount > 3) {
+                alert("请输入关键字！");
+            }
+            return;
+        }
+        window.open("https://blog.zhangfeibiao.com/search?keyword=" + s);
+    }
+</script>
 <#include "../../common-template/label.ftl">
 
 ${plugins}

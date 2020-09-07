@@ -17,11 +17,22 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 -->
+<style>
+    #search-new-s{
+        box-shadow: none;
+        border: 1px solid #e1e8ed;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color:#657786;
+        resize: vertical;
+        height:30px;
+    }
+</style>
 <div class="card widget">
     <div class="card-content" style="width:100%">
         <div class="menu">
-            &nbsp;<input type="text" required="required" value="" name="s" id="search" onkeydown="enterSearch(event)">&nbsp;
-            <input type="submit" id="searchsubmit" class="button" style="font-size:9.5pt"  value="搜索" onclick="search()">
+            &nbsp;<input type="text" required="required" id="search-new-s" onkeydown="enterSearch(event)">&nbsp;
+            <input type="submit" id="searchsubmit" class="button" style="font-size:10pt" value="搜索" onclick="search()">
         </div>
     </div>
 </div>
@@ -104,24 +115,3 @@
         </div>
     </div>
 </div>
-<script>
-    function enterSearch(event){
-        if(event.keyCode == "13"){
-            search();
-        }
-
-    }
-
-    var searchEmptyCount = 0
-    function search(){
-        var s = $("#search").val();
-        if (s == ""){
-            searchEmptyCount++;
-            if (searchEmptyCount > 3) {
-                alert("请输入关键字！");
-            }
-            return;
-        }
-        window.open("https://blog.zhangfeibiao.com/search?keyword=" + s);
-    }
-</script>
