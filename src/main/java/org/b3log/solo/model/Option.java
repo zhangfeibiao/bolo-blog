@@ -75,12 +75,12 @@ public final class Option {
     public static final String ID_C_HLJS_THEME = "hljsTheme";
 
     /**
-     * Key of enable backup public articles to HacPai. 备份公开文章到社区 https://hacpai.com/article/1557238327458
+     * Key of enable backup public articles to HacPai. 备份公开文章到社区 https://ld246.com/article/1557238327458
      */
     public static final String ID_C_SYNC_GITHUB = "syncGitHub";
 
     /**
-     * Key of enable sync (pull) GitHub. 拉取并展示仓库 https://hacpai.com/article/1557238327458
+     * Key of enable sync (pull) GitHub. 拉取并展示仓库 https://ld246.com/article/1557238327458
      * https://github.com/b3log/solo/issues/12825
      */
     public static final String ID_C_PULL_GITHUB = "pullGitHub";
@@ -602,7 +602,6 @@ public final class Option {
                 html += "标题：{title}<br>\n";
                 html += "作者：<a href=\"{blog}\" target=\"_blank\">{author}</a><br>\n";
                 html += "地址：<a href=\"{url}\" target=\"_blank\">{url}</a><br>\n\n";
-                html += "日期：{date}<br>\n";
                 html += "<!-- 签名档内可使用 HTML、JavaScript -->\n<br>";
                 sign.put(Sign.SIGN_HTML, html);
             }

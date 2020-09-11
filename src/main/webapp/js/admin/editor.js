@@ -43,7 +43,7 @@ $.extend(SoloEditor.prototype, {
 
     // 编辑器常用表情使用社区端的设置
     $.ajax({
-      url: 'https://hacpai.com/apis/vcomment/users/emotions',
+      url: 'https://' + Label.hacpaiDomain + '/apis/vcomment/users/emotions',
       type: 'GET',
       cache: true,
       async: false,
@@ -59,6 +59,17 @@ $.extend(SoloEditor.prototype, {
           })
         }
       },
+      error: function (response, ajaxOptions, thrownError) {
+        $("#tipMsg").text("无法从链滴社区获取常用Emoji，自动生成中...");
+        Label.emoji = {}
+        let defaultEmojiData = JSON.parse('[{"+1":"👍"},{"-1":"👎"},{"confused":"😕"},{"eyes":"👀"},{"heart":"❤️"},{"tada":"🎉"},{"smile":"😄"},{"rocket":"🚀"}]')
+        if (Array.isArray(defaultEmojiData)) {
+          defaultEmojiData.forEach(item => {
+            const key = Object.keys(item)[0]
+            Label.emoji[key] = item[key]
+          })
+        }
+      }
     })
 
     const options = {
@@ -105,7 +116,7 @@ $.extend(SoloEditor.prototype, {
       },
       lang: Label.localeString,
       hint: {
-        emojiTail: `<a href="https://hacpai.com/settings/function" target="_blank">设置常用表情</a>`,
+        emojiTail: `<a href="https://` + Label.hacpaiDomain + `/settings/function" target="_blank">设置常用表情</a>`,
         emoji: Label.emoji,
       },
       toolbarConfig: {

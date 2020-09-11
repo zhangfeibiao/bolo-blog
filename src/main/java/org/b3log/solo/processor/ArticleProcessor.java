@@ -55,7 +55,6 @@ import org.jsoup.Jsoup;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -949,14 +948,12 @@ public class ArticleProcessor {
         LOGGER.debug("Getting article sign....");
         final JSONObject sign = articleQueryService.getSign(article.getString(Article.ARTICLE_SIGN_ID), preference);
         final String articleTitle = article.optString(Article.ARTICLE_TITLE);
-        final String articleCreated = article.optString(Article.ARTICLE_CREATED);
         final String author = article.optString(Common.AUTHOR_NAME);
         final String url = Latkes.getServePath() + article.optString(Article.ARTICLE_PERMALINK);
         String signHtml = sign.optString(Sign.SIGN_HTML);
         // 签名档内置模板变量 https://github.com/b3log/solo/issues/12758
         signHtml = StringUtils.replace(signHtml, "{title}", articleTitle);
         signHtml = StringUtils.replace(signHtml, "{author}", author);
-        signHtml = StringUtils.replace(signHtml, "{date}", new SimpleDateFormat("yyyy年MM月dd日").format(new Date(Long.valueOf(articleCreated))));
         signHtml = StringUtils.replace(signHtml, "{url}", url);
         signHtml = StringUtils.replace(signHtml, "{blog}", Latkes.getServePath());
         sign.put(Sign.SIGN_HTML, signHtml);

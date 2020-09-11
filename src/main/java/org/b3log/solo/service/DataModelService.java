@@ -40,6 +40,7 @@ import org.b3log.latke.service.annotation.Service;
 import org.b3log.latke.servlet.RequestContext;
 import org.b3log.latke.util.*;
 import org.b3log.solo.SoloServletListener;
+import org.b3log.solo.bolo.Global;
 import org.b3log.solo.bolo.prop.Options;
 import org.b3log.solo.model.*;
 import org.b3log.solo.repository.*;
@@ -637,6 +638,9 @@ public class DataModelService {
             showCodeBlockLn = Option.DefaultPreference.DEFAULT_SHOW_CODE_BLOCK_LN;
         }
         dataModel.put(Option.ID_C_SHOW_CODE_BLOCK_LN, showCodeBlockLn);
+
+        // 链滴域名设定
+        dataModel.put("hacpaiDomain", Global.HACPAI_DOMAIN);
     }
 
     /**
@@ -840,7 +844,7 @@ public class DataModelService {
             dataModel.put(User.USERS, userList);
             final JSONObject admin = userRepository.getAdmin();
             dataModel.put(Common.ADMIN_USER, admin);
-            // 返回 Bolo 设定的黑客派用户名
+            // 返回 Bolo 设定的链滴用户名
             String userName = "";
             try {
                 BeanManager beanManager = BeanManager.getInstance();
@@ -864,6 +868,8 @@ public class DataModelService {
             } catch (Exception e) {
                 dataModel.put(Option.ID_C_INTERACTIVE, "on");
             }
+            // 链滴域名设定
+            dataModel.put("hacpaiDomain", Global.HACPAI_DOMAIN);
             final String skinDirName = (String) context.attr(Keys.TEMAPLTE_DIR_NAME);
             dataModel.put(Option.ID_C_SKIN_DIR_NAME, skinDirName);
             Keys.fillRuntime(dataModel);
