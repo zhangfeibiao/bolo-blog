@@ -5,7 +5,7 @@
 <h4 align="center">记录精彩的程序人生</h4>
 <p align="center"><a title="一树梨花落海棠" target="_blank" href="https://github.com/zhangfeibiao/bolo-blog"><img src="https://img.shields.io/github/last-commit/zhangfeibiao/bolo-blog.svg?style=flat-square&color=FF9900"></a>
 <a title="GitHub repo size in bytes" target="_blank" href="https://github.com/zhangfeibiao/bolo-blog"><img src="https://img.shields.io/github/repo-size/zhangfeibiao/bolo-blog.svg?style=flat-square"></a>
-<a title="Bolo Version" target="_blank" href="https://github.com/adlered/bolo-solo"><img src="https://img.shields.io/badge/bolo-v2.0 稳定版-f1e05a.svg?style=flat-square&color=blueviolet"></a>
+<a title="Bolo Version" target="_blank" href="https://github.com/adlered/bolo-solo"><img src="https://img.shields.io/badge/bolo-v2.1 稳定版-f1e05a.svg?style=flat-square&color=blueviolet"></a>
 <a title="Hits" target="_blank" href="https://github.com/88250/hits"><img src="https://hits.b3log.org/zhangfeibiao/bolo-blog.svg"></a></p>
 
 ### 最新
